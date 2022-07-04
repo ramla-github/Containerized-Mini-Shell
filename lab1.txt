@@ -1,0 +1,54 @@
+Script started on 2021-03-16 05:41:13+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="58" LINES="23"]
+]0;ramla@ramla-VirtualBox: ~/Desktop[01;32mramla@ramla-VirtualBox[00m:[01;34m~/Desktop[00m$ sudo ./a.out
+[sudo] password for ramla: 
+Welcome to shell
+--------------------------
+Command list
+quit  Quit program
+new Change host name
+pid  Get Process ID of current process
+root Change current root
+net Display network
+--------------------------
+sh-4.1# ls
+ a.out	 'Lab 1'     new     note.txt   typescript
+ file.c   lab1.txt   new.c   ok         um
+sh-4.1# ps
+    PID TTY          TIME CMD
+   8647 pts/1    00:00:00 sudo
+   8648 pts/1    00:00:00 a.out
+   8649 pts/1    00:00:00 a.out
+   8654 pts/1    00:00:00 ps
+sh-4.1# new
+Old hostname ramla-VirtualBox
+Enter the new hostname
+o computer
+New hostname computer
+sh-4.1# hostname
+computer
+
+sh-4.1# pid
+PID: 8656
+sh-4.1# ps
+    PID TTY          TIME CMD
+   8647 pts/1    00:00:00 sudo
+   8648 pts/1    00:00:00 a.out
+   8649 pts/1    00:00:00 a.out
+   8671 pts/1    00:00:00 ps
+sh-4.1# net
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+sh-4.1# root
+The directory is /home/ramla/Desktop
+Enter new root comp
+The new directory is /comp
+sh-4.1# quit
+]0;ramla@ramla-VirtualBox: ~/Desktop[01;32mramla@ramla-VirtualBox[00m:[01;34m~/Desktop[00m$ ip link
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:26:e8:8c brd ff:ff:ff:ff:ff:ff
+]0;ramla@ramla-VirtualBox: ~/Desktop[01;32mramla@ramla-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+exit
+
+Script done on 2021-03-16 05:42:32+01:00 [COMMAND_EXIT_CODE="0"]
